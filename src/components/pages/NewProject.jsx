@@ -1,9 +1,15 @@
 import React, { Component } from 'react'
+import styles from "./NewProject.module.css";
+import ProjectForm from '../project/ProjectForm';
 
 export class NewProject extends Component {
   render() {
     return (
-      <h1>NewProject</h1>
+      <div className={styles.newproject_container}>
+        <h1>Criar Projeto</h1>
+        <p>Crie seu projeto para depois adicionar os serviços</p>
+        <ProjectForm btnText="Criar Projeto"/>
+      </div>
     )
   }
 }
